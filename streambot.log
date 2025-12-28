@@ -1,0 +1,334 @@
+[28/12/2025 05:15:42] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py:51} ERROR - Failed starting Client - 1 Error:
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 37, in start_client
+    client = await Client(
+             ^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 63, in start
+    await self.authorize()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/client.py", line 424, in authorize
+    return await self.sign_in_bot(self.bot_token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/auth/sign_in_bot.py", line 52, in sign_in_bot
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.AccessTokenInvalid: Telegram says: [400 ACCESS_TOKEN_INVALID] (caused by "auth.ImportBotAuthorization") Pyrogram 2.3.69 thinks: The bot access token is invalid
+[28/12/2025 05:15:44] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py:51} ERROR - Failed starting Client - 2 Error:
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 37, in start_client
+    client = await Client(
+             ^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 63, in start
+    await self.authorize()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/client.py", line 424, in authorize
+    return await self.sign_in_bot(self.bot_token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/auth/sign_in_bot.py", line 52, in sign_in_bot
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.AccessTokenInvalid: Telegram says: [400 ACCESS_TOKEN_INVALID] (caused by "auth.ImportBotAuthorization") Pyrogram 2.3.69 thinks: The bot access token is invalid
+[28/12/2025 05:15:44] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py:73} ERROR - Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 69, in <module>
+    loop.run_until_complete(start_services())
+  File "/home/codespace/.python/current/lib/python3.12/asyncio/base_events.py", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 47, in start_services
+    await initialize_clients()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 54, in initialize_clients
+    multi_clients.update(dict(clients))
+                         ^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+
+[28/12/2025 05:17:14] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py:51} ERROR - Failed starting Client - 1 Error:
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 37, in start_client
+    client = await Client(
+             ^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 63, in start
+    await self.authorize()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/client.py", line 424, in authorize
+    return await self.sign_in_bot(self.bot_token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/auth/sign_in_bot.py", line 52, in sign_in_bot
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.AccessTokenInvalid: Telegram says: [400 ACCESS_TOKEN_INVALID] (caused by "auth.ImportBotAuthorization") Pyrogram 2.3.69 thinks: The bot access token is invalid
+[28/12/2025 05:17:16] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py:51} ERROR - Failed starting Client - 2 Error:
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 37, in start_client
+    client = await Client(
+             ^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 63, in start
+    await self.authorize()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/client.py", line 424, in authorize
+    return await self.sign_in_bot(self.bot_token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/auth/sign_in_bot.py", line 52, in sign_in_bot
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.AccessTokenInvalid: Telegram says: [400 ACCESS_TOKEN_INVALID] (caused by "auth.ImportBotAuthorization") Pyrogram 2.3.69 thinks: The bot access token is invalid
+[28/12/2025 05:17:16] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py:73} ERROR - Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 69, in <module>
+    loop.run_until_complete(start_services())
+  File "/home/codespace/.python/current/lib/python3.12/asyncio/base_events.py", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 47, in start_services
+    await initialize_clients()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 54, in initialize_clients
+    multi_clients.update(dict(clients))
+                         ^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+
+[28/12/2025 05:19:03] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py:51} ERROR - Failed starting Client - 1 Error:
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 37, in start_client
+    client = await Client(
+             ^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 63, in start
+    await self.authorize()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/client.py", line 424, in authorize
+    return await self.sign_in_bot(self.bot_token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/auth/sign_in_bot.py", line 52, in sign_in_bot
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.AccessTokenInvalid: Telegram says: [400 ACCESS_TOKEN_INVALID] (caused by "auth.ImportBotAuthorization") Pyrogram 2.3.69 thinks: The bot access token is invalid
+[28/12/2025 05:19:06] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py:51} ERROR - Failed starting Client - 2 Error:
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 37, in start_client
+    client = await Client(
+             ^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 63, in start
+    await self.authorize()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/client.py", line 424, in authorize
+    return await self.sign_in_bot(self.bot_token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/auth/sign_in_bot.py", line 52, in sign_in_bot
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.AccessTokenInvalid: Telegram says: [400 ACCESS_TOKEN_INVALID] (caused by "auth.ImportBotAuthorization") Pyrogram 2.3.69 thinks: The bot access token is invalid
+[28/12/2025 05:19:06] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py:73} ERROR - Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 69, in <module>
+    loop.run_until_complete(start_services())
+  File "/home/codespace/.python/current/lib/python3.12/asyncio/base_events.py", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 47, in start_services
+    await initialize_clients()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 54, in initialize_clients
+    multi_clients.update(dict(clients))
+                         ^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+
+[28/12/2025 05:20:38] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py:51} ERROR - Failed starting Client - 1 Error:
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 37, in start_client
+    client = await Client(
+             ^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 63, in start
+    await self.authorize()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/client.py", line 424, in authorize
+    return await self.sign_in_bot(self.bot_token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/auth/sign_in_bot.py", line 52, in sign_in_bot
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.AccessTokenInvalid: Telegram says: [400 ACCESS_TOKEN_INVALID] (caused by "auth.ImportBotAuthorization") Pyrogram 2.3.69 thinks: The bot access token is invalid
+[28/12/2025 05:20:40] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py:51} ERROR - Failed starting Client - 2 Error:
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 37, in start_client
+    client = await Client(
+             ^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 63, in start
+    await self.authorize()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/client.py", line 424, in authorize
+    return await self.sign_in_bot(self.bot_token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/auth/sign_in_bot.py", line 52, in sign_in_bot
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.AccessTokenInvalid: Telegram says: [400 ACCESS_TOKEN_INVALID] (caused by "auth.ImportBotAuthorization") Pyrogram 2.3.69 thinks: The bot access token is invalid
+[28/12/2025 05:20:40] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py:73} ERROR - Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 69, in <module>
+    loop.run_until_complete(start_services())
+  File "/home/codespace/.python/current/lib/python3.12/asyncio/base_events.py", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 47, in start_services
+    await initialize_clients()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/clients.py", line 54, in initialize_clients
+    multi_clients.update(dict(clients))
+                         ^^^^^^^^^^^^^
+TypeError: cannot convert dictionary update sequence element #0 to a sequence
+
+[28/12/2025 05:22:31] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py:73} ERROR - Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 69, in <module>
+    loop.run_until_complete(start_services())
+  File "/home/codespace/.python/current/lib/python3.12/asyncio/base_events.py", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 39, in start_services
+    await FileStream.start()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 69, in start
+    await self.invoke(raw.functions.updates.GetState())
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.unauthorized_401.SessionRevoked: Telegram says: [401 SESSION_REVOKED] (caused by "updates.GetState") Pyrogram 2.3.69 thinks: The authorization has been invalidated, because of the user terminating all sessions
+
+[28/12/2025 05:26:50] {/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py:73} ERROR - Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 69, in <module>
+    loop.run_until_complete(start_services())
+  File "/home/codespace/.python/current/lib/python3.12/asyncio/base_events.py", line 684, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/__main__.py", line 39, in start_services
+    await FileStream.start()
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/start.py", line 69, in start
+    await self.invoke(raw.functions.updates.GetState())
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.unauthorized_401.SessionRevoked: Telegram says: [401 SESSION_REVOKED] (caused by "updates.GetState") Pyrogram 2.3.69 thinks: The authorization has been invalidated, because of the user terminating all sessions
+
+[28/12/2025 05:28:37] {/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/dispatcher.py:438} ERROR - Unhandled exception: Telegram says: [400 CHAT_ID_INVALID] (caused by "messages.GetChats") Pyrogram 2.3.69 thinks: The chat id being used is invalid or not known yet. Make sure you see the chat before interacting with it
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/resolve_peer.py", line 63, in resolve_peer
+    return await self.storage.get_peer_by_id(peer_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/storage/sqlite_storage.py", line 210, in get_peer_by_id
+    raise KeyError(f"ID not found: {peer_id}")
+KeyError: 'ID not found: -100123456789'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/dispatcher.py", line 383, in _dispatch_to_handlers
+    await self._execute_handler(handler, *args)
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/dispatcher.py", line 410, in _execute_handler
+    await handler.callback(self.client, *args)
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/handlers/message_handler.py", line 154, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/bot/plugins/start.py", line 19, in start
+    if not await verify_user(bot, message):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/utils/bot_utils.py", line 210, in verify_user
+    await is_user_exist(bot, message)
+  File "/workspaces/PacketPrep_Project/FileStreamBot/FileStream/utils/bot_utils.py", line 189, in is_user_exist
+    await bot.send_message(
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/messages/send_message.py", line 190, in send_message
+    peer=await self.resolve_peer(chat_id),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/resolve_peer.py", line 107, in resolve_peer
+    await self.invoke(
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/advanced/invoke.py", line 80, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 420, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/session/session.py", line 377, in send
+    RPCError.raise_it(result, type(data))
+  File "/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/errors/rpc_error.py", line 93, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChatIdInvalid: Telegram says: [400 CHAT_ID_INVALID] (caused by "messages.GetChats") Pyrogram 2.3.69 thinks: The chat id being used is invalid or not known yet. Make sure you see the chat before interacting with it
+[28/12/2025 05:34:52] {/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/idle.py:76} INFO - Stop signal received (SIGINT). Exiting...
+[28/12/2025 05:44:20] {/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/idle.py:76} INFO - Stop signal received (SIGINT). Exiting...
+[28/12/2025 05:45:30] {/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/idle.py:76} INFO - Stop signal received (SIGINT). Exiting...
+[28/12/2025 05:47:14] {/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/idle.py:76} INFO - Stop signal received (SIGINT). Exiting...
+[28/12/2025 05:50:02] {/workspaces/PacketPrep_Project/FileStreamBot/venv/lib/python3.12/site-packages/pyrogram/methods/utilities/idle.py:76} INFO - Stop signal received (SIGINT). Exiting...
